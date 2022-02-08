@@ -20,7 +20,7 @@
 
 ```shell
 mvn -U -B archetype:generate \
--DarchetypeGroupId='org.hephaestus.archetype' \
+-DarchetypeGroupId='io.github.project-h3phaestus' \
 -DarchetypeArtifactId='ezcloud-archetype' \
 -DarchetypeVersion='1.0.0-SNAPSHOT' \
 -Dgitignore='.gitignore' \
