@@ -5,7 +5,7 @@
 ![mit](https://img.shields.io/github/license/Project-H3phaestus/ezcloud-archetype)
 ![contributors](https://img.shields.io:/github/contributors/Project-H3phaestus/ezcloud-archetype)
 ![jdk](https://img.shields.io:/badge/JDK-11-brightgreen)
-![automation](https://img.shields.io:/badge/AUTOMATION-SUPPORTED-brightgreen)
+![automation](https://img.shields.io:/badge/自动化-已支持-brightgreen)
 
 | [English Doc](./readme.md) | 中文文档 |
 |:--------------------------:|:----:|
