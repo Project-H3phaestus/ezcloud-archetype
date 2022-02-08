@@ -10,11 +10,11 @@
 | [English Doc](./readme.md) | 中文文档 |
 |:--------------------------:|:----:|
 
-A maven archetype for [EZCloud](https://github.com/Project-H3phaestus/EZCloud) scaffolding.
+基于 [EZCloud](https://github.com/Project-H3phaestus/EZCloud) 的微服务脚手架.
 
 # :bulb: 使用案例
 
-## create one project
+## 创建单个项目
 
 请根据实际情况替换以下参数的值：
 
@@ -37,7 +37,7 @@ mvn -U -B archetype:generate \
 -DezCloudVersion=''
 ```
 
-## batch create project
+## 批量生成项目
 
 我们可以通过python脚本来实现批量生成:
 > python 版本: 3.8
