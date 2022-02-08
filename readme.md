@@ -40,7 +40,7 @@ mvn -U -B archetype:generate \
 
 ## batch create project
 
-We can also generate multiple projects at one time through python scripts:
+We can also generate multiple projects simultaneously through python script:
 > python version: 3.8
 
 
