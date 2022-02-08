@@ -167,6 +167,80 @@ print('[ OK ] Success!')
 
 ```
 
+# :hammer_and_wrench: project yaml config sample
+
+```yaml
+server:
+  servlet:
+    session:
+      timeout: 30M
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ezcloud-test
+  servlet:
+    multipart:
+      max-request-size: 20MB
+      max-file-size: 20MB
+  datasource:
+    url: jdbc:postgresql://x454262h22.qicp.vip:15432/zd
+    username: zd
+    password: cquisse
+    hikari:
+      connection-timeout: 60000
+      minimum-idle: 1
+      maximum-pool-size: 6
+      idle-timeout: 30000
+      pool-name: HikariPool
+  cloud:
+    sentinel:
+      transport:
+        port: 20100
+        dashboard: 192.168.2.157:8080
+  redis:
+    host: 192.168.2.157
+    port: 16379
+    password: cquissE!
+    timeout: 10s
+    lettuce:
+      pool:
+        min-idle: 1
+        max-idle: 3
+        max-active: 4
+        max-wait: -1ms
+
+mybatis-plus:
+  configuration:
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+    local-cache-scope: statement
+    cache-enabled: false
+  global-config:
+    banner: false
+    db-config:
+      id-type: assign_id
+      table-prefix: tm
+      logic-delete-field: deleted
+      logic-not-delete-value: false
+      logic-delete-value: true
+      update-strategy: not_null
+      insert-strategu: not_null
+
+ezcloud:
+  autoconfigure:
+    enable-thread-pool: true
+    enable-mvc: true
+    enable-exception-handler: true
+    enable-serializer: true
+    enable-redisson-cache-manager: true
+
+feign:
+  sentinel:
+    enabled: true
+```
+
 # :hammer: Contributing
 PRs accepted.
 
