@@ -16,7 +16,7 @@ A maven archetype for [EZCloud](https://github.com/Project-H3phaestus/EZCloud) s
 
 # :bulb: Usage
 
-## create one project
+## create single project
 
 Customize the values of the following parameters according to the situation:
 ```shell
@@ -40,7 +40,7 @@ mvn -U -B archetype:generate \
 
 ## batch create project
 
-We can also generate multiple projects at one time through python scripts:
+We can also generate multiple projects simultaneously through python script:
 > python version: 3.8
 
 
