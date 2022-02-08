@@ -18,7 +18,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.hephaestus.ezcloud</groupId>
+      <groupId>io.github.project-h3phaestus</groupId>
       <artifactId>ezcloud-util</artifactId>
       <version>${ezcloud.version}</version>
       <scope>provided</scope>

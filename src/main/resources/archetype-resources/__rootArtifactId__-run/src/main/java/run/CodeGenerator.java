@@ -3,7 +3,7 @@
 #set( $symbol_escape = '\' )
 package ${package}.run;
 
-import org.hephaestus.ezcloud.mp.generator.EzCloudGenerator;
+import io.github.projecthephaestus.ezcloud.mp.generator.EzCloudGenerator;
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 
 /**

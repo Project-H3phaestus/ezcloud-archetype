@@ -3,14 +3,14 @@
 #set( $symbol_escape = '\' )
 package ${package}.run;
 
-import org.hephaestus.ezcloud.autoconfigure.annotation.mvc.SpringCloudApplicationAllFeatEnabled;
+import io.github.projecthephaestus.ezcloud.autoconfigure.annotation.mvc.SpringCloudApplicationAllFeatEnabled;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
 /**
  * @author ${author}
  */
 @SpringCloudApplicationAllFeatEnabled(
-    componentBasePackages={"${package}", "org.hephaestus.ezcloud"},
+    componentBasePackages={"${package}", "io.github.projecthephaestus"},
     entityBasePackages={"${package}.entity"},
     repositoryBasePackages={"${package}"},
     feignBasePackages={"${package}.feign"},

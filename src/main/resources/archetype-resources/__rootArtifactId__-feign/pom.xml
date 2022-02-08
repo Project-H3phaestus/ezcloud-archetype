@@ -23,7 +23,7 @@
     </dependency>
     <!--  feign需要的依赖  -->
     <dependency>
-      <groupId>org.hephaestus.ezcloud</groupId>
+      <groupId>io.github.project-h3phaestus</groupId>
       <artifactId>ezcloud-util</artifactId>
       <scope>provided</scope>
     </dependency>
@@ -48,7 +48,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.hephaestus.ezcloud</groupId>
+      <groupId>io.github.project-h3phaestus</groupId>
       <artifactId>ezcloud-spring-boot-feign-starter</artifactId>
       <version>${ezcloud.version}</version>
     </dependency>
