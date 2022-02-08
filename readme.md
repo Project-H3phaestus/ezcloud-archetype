@@ -16,7 +16,7 @@ A maven archetype for [EZCloud](https://github.com/Project-H3phaestus/EZCloud) s
 
 # :bulb: Usage
 
-## create one project
+## create single project
 
 Customize the values of the following parameters according to the situation:
 ```shell
