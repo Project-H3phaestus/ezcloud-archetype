@@ -21,7 +21,7 @@ A maven archetype for [EZCloud](https://github.com/Project-H3phaestus/EZCloud) s
 Customize the values of the following parameters according to the situation:
 ```shell
 mvn -U -B archetype:generate \
--DarchetypeGroupId='org.hephaestus.archetype' \
+-DarchetypeGroupId='io.github.project-h3phaestus' \
 -DarchetypeArtifactId='ezcloud-archetype' \
 -DarchetypeVersion='1.0.0-SNAPSHOT' \
 -Dgitignore='.gitignore' \
