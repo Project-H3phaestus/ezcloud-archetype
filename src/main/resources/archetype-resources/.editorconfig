@@ -1,0 +1,15 @@
+root = true
+
+[*]
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 120
+end_of_line = LF
+charset = utf-8
+
+[*.java]
+indent_size = 4
+indent_style = space
+
+[*.{yml, properties, xml, json}]
+indent_size = 2

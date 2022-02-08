@@ -1,0 +1,7 @@
+server:
+  port: ${serverPort}
+spring:
+  application:
+    name: ${rootArtifactId}
+  profiles:
+    active: dev

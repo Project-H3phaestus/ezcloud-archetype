@@ -1,0 +1,14 @@
+# test env
+spring:
+  main:
+    allow-circular-references: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacosTestHost}
+        namespace: test
+      config:
+        server-addr: ${nacosTestHost}
+        file-extension: yml
+        group: DEFAULT_GROUP
+        namespace: test

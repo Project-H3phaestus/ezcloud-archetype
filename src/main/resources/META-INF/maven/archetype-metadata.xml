@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+  xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+  name="ezcloud-archetype"
+  xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <requiredProperties>
+    <requiredProperty key="gitignore">
+      <defaultValue>.gitignore</defaultValue>
+    </requiredProperty>
+    <!--    作者    -->
+    <requiredProperty key="author"/>
+    <!--    项目描述    -->
+    <requiredProperty key="projectDescription"/>
+    <!--    java版本    -->
+    <requiredProperty key="jdkVersion">
+      <defaultValue>11</defaultValue>
+    </requiredProperty>
+    <!--    ezcloud版本    -->
+    <requiredProperty key="ezCloudVersion">
+      <defaultValue>1.0.0-SNAPSHOT</defaultValue>
+    </requiredProperty>
+    <!--    端口    -->
+    <requiredProperty key="serverPort">
+      <defaultValue>${random.int(1000,2000)}</defaultValue>
+    </requiredProperty>
+    <!--    nacos地址    -->
+    <requiredProperty key="nacosDevHost">
+      <defaultValue>10.236.101.16:30848</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="nacosTestHost">
+      <defaultValue>192.168.2.157:8848</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="nacosPrdHost">
+      <defaultValue>nacos-headless.default.svc.cluster.local:8848</defaultValue>
+    </requiredProperty>
+    <!--    数据库驱动类型    -->
+    <requiredProperty key="driverType">
+      <defaultValue>0</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+
+  <fileSets>
+    <!--    规范文件    -->
+    <fileSet encoding="UTF-8">
+      <directory/>
+      <includes>
+        <include>.editorconfig</include>
+        <include>__gitignore__</include>
+      </includes>
+    </fileSet>
+    <!--  数据库脚本记录文件夹  -->
+    <fileSet encoding="UTF-8">
+      <directory>db-script</directory>
+      <includes>
+        <include>**/*.gitkeep</include>
+        <include>**/*.sql</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+
+  <!--  maven模块  -->
+  <modules>
+    <module id="${rootArtifactId}-api" dir="__rootArtifactId__-api" name="${rootArtifactId}-api">
+      <fileSets>
+        <fileSet packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.gitkeep</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-config" dir="__rootArtifactId__-config" name="${rootArtifactId}-config">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.gitkeep</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-entity" dir="__rootArtifactId__-entity" name="${rootArtifactId}-entity">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.gitkeep</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-feign" dir="__rootArtifactId__-feign" name="${rootArtifactId}-feign">
+      <fileSets>
+        <fileSet packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.gitkeep</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-web" dir="__rootArtifactId__-web" name="${rootArtifactId}-web">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.gitkeep</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-business" dir="__rootArtifactId__-business" name="${rootArtifactId}-business">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.gitkeep</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-run" dir="__rootArtifactId__-run" name="${rootArtifactId}-run">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.gitkeep</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.yml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+</archetype-descriptor>

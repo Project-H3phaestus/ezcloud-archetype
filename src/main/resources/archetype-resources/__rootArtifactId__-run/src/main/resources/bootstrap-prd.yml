@@ -1,0 +1,14 @@
+# prd env
+spring:
+  main:
+    allow-circular-references: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacosPrdHost}
+        namespace: prd
+      config:
+        server-addr: ${nacosPrdHost}
+        file-extension: yml
+        group: DEFAULT_GROUP
+        namespace: prd

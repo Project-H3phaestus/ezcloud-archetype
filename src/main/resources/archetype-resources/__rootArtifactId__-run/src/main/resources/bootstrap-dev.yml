@@ -1,0 +1,15 @@
+# dev env
+spring:
+  main:
+    allow-circular-references: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacosDevHost}
+        namespace: dev
+      config:
+        server-addr: ${nacosDevHost}
+        file-extension: yml
+        group: DEFAULT_GROUP
+        namespace: dev
+
