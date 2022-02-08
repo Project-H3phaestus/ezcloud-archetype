@@ -182,9 +182,9 @@ spring:
       max-request-size: 20MB
       max-file-size: 20MB
   datasource:
-    url: jdbc:postgresql://x454262h22.qicp.vip:15432/zd
+    url: jdbc:postgresql://x454262h22.qicp.vip:5432/zd
     username: zd
-    password: cquisse
+    password: cquiss3
     hikari:
       connection-timeout: 60000
       minimum-idle: 1
